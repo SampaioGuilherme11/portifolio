@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - Home</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <script src="https://kit.fontawesome.com/0af87ce8f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="cabecalho__navegacao">
+            <ul class="cabecalho__lista">
+                <li class="lista"><a href="index.html" class="lista__itens"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="lista"><a href="curriculo.html" class="lista__itens"><i class="fa-solid fa-user"></i> Currículo</a></li>
+                <li class="lista"><a href="projetos.html" class="lista__itens"><i class="fa-solid fa-mug-hot"></i> Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="container__area">
+            <div class="texto">
+                <h1 class="texto__titulo">Sobre Mim</h1>
+                <p class="texto__conteudo">Olá! Eu sou Pedro Sampaio Guilherme, um desenvolvedor apaixonado por criar soluções inovadoras. Tenho experiência em várias tecnologias e estou sempre buscando aprender e crescer profissionalmente.</p>
+            </div>
+            <div class="foto">
+                <img src="/img/Perfil Pedro.png" alt="Pedro Sampaio Guilherme">
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p id="copyright">Todos os direitos reservados &copy; 2021</p>
+        <div class="contato">
+            <ul class="contato">
+                <li class="contato__lista"><a href="index.html" class="contato__lista__item">Sobre</a></li>
+                <li class="contato__lista"><a href="https://whatsa.me/5527996350021/?t=Oi%20Pedro,%20tudo%20bem%20?" target="_blank" rel="noopener noreferrer" class="contato__lista__item">Contato</a></li>
+            </ul>
+        </div>
+        <div class="socialmedia">
+            <a href="#" class="socialmedia__item"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+            <a href="#" class="socialmedia__item"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#" class="socialmedia__item"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a>
+        </div>
+    </footer>
+    <script>
+        // Função para atualizar o ano no rodapé
+        function atualizarAno() {
+            const anoAtual = new Date().getFullYear(); // Obtém o ano atual
+            const copyrightElemento = document.getElementById('copyright'); // Seleciona o elemento de copyright
+            copyrightElemento.innerHTML = `Todos os direitos reservados &copy; ${anoAtual}`; // Atualiza o conteúdo do elemento
+        }
+    
+        // Chama a função para atualizar o ano quando a página carregar
+        document.addEventListener('DOMContentLoaded', atualizarAno);
+    </script>
+    
+</body>
+</html>
